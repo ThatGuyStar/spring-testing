@@ -19,7 +19,7 @@ A simple way is to rename the `env.sample` file to `.env`, fill in your API key 
 ```bash
 source .env
 ```
-
+Another option is to add an application-local.properties folder in the same directory as application.properties. Insert key there. Then add this file to .gitignore (to prevent your key from being shared). Edit run config to pass in -Dspring.profiles.active=local in the VM options.
 ### 2. Start a PostgreSQL database
 The easiest way is to use the provided `startDatabase.sh` script. This script starts a Docker container which contains a database with the following configuration:
     
