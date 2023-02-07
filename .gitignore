@@ -26,8 +26,10 @@ nbdist/
 out/
 
 .env
-application-local.properties
 gocd/server/ssh/**
 !gocd/server/ssh/put-ssh-keys-here
 .vagrant/
 ubuntu-xenial-16.04-cloudimg-console.log
+
+## Profile
+src/main/resources/application-local.properties
